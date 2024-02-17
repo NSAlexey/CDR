@@ -21,7 +21,7 @@ namespace CDR.Services
                 var reader = new StreamReader(file);
                 var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture) { Delimiter = ",", HasHeaderRecord = true };
                 using var csv = new CsvReader(reader, csvConfig);
-                var records = csv.GetRecords<CallDetail>().ToList();
+                var records = csv.GetRecords<CallDetail>();
                 var count = 0;
                 foreach (var record in records)
                 {
