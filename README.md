@@ -10,3 +10,6 @@ The expectation from the product team is that we produce a fully working system 
 3. - More unit test is needed to cover different cases with data in files and to cover another methods. 
    - Optimisation of finding previous imported data: add index to table on MS SQL server or separate journal with imported files
    - additional statistics endpoints
+  
+If Start date is empty, an endpoint uses 01/01/0001.
+If End date is empty, today date is used.
